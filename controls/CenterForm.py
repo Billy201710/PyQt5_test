@@ -15,8 +15,8 @@ class FirstMainWin(QMainWindow):
     def center(self):
         screen = QDesktopWidget().screenGeometry()
         size = self.geometry()
-        newLeft = (screen.width()-size.width())/20
-        newTop = (screen.height()-size.height())/20
+        newLeft = (screen.width()-size.width())/2
+        newTop = (screen.height()-size.height())/2
         self.move(newLeft,newTop)
 
 if __name__ == '__main__':
